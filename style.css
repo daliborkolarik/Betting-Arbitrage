@@ -1,88 +1,43 @@
 body {
-  font-size: 20px;
-  margin: 100px;
-  background-color: lightblue;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
 }
 
-h1 {
-  width: 100%;
-  text-align: center;
-}
-
-input {
-  font-size: 20px;
-  padding: 5px;
-  width: 100%;
-
-}
-
-div {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  max-width: 400px;
+  margin-bottom: 20px;
 }
 
 label {
-  margin-bottom: 10px;
-  font-size: 25px;
+  font-weight: bold;
 }
 
-.uneditable {
-  pointer-events: none;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
 }
 
-.container {
-  display: flex;
-  width: 250px;
-  flex-direction: column;
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-#submitbutton {
-  display: flex;
-  width: 300px;
-  background-color: yellowgreen;
+button:hover {
+  background-color: #45a049;
 }
 
-#resetbutton {
-  display: flex;
-  width: 300px;
-  background-color: red;
+button:active {
+  background-color: #3e8e41;
 }
 
-#kurzysazky {
-  display: flex;
-  flex-direction: row
-}
-
-#buttons {
-  display: flex;
-  flex-direction: row
-}
-
-
-@media only screen and (max-width: 1300px) {
-  #kurzysazky {
-    flex-wrap: wrap;
-    min-height: 100%;
-    width: 100%
-  }
-
-  .container {
-    width: auto
-  }
-
-  body {
-    margin: 30px
-  }
-
-  #buttons {
-    display: flex;
-    flex-direction: column
-  }
+input[disabled] {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
 }
