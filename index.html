@@ -1,75 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Arbitráž</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
 
-<form id="kurzysazky">
+<head>
+  <meta charset="utf-8">
+  <title>Arbitráž</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<div class="container">
-<div class="inputkurz">
-  <label for="kurz1">Kurz 1:</label>
-  <input type="number" id="kurz1"  step="0.01" autofocus>
-</div>
-<div class="inputkurz">
-  <label for="kurz2">Kurz 2:</label>
-  <input type="number"  id="kurz2" step="0.01" required>
-</div>
+<body>
 
-</div>
+  <form id="kurzysazky">
 
-<div class="container">
-<div class="inputkurz">
-  <label for="sazka1">Sázka 1(Kč):</label>
-  <input type="number" id="sazka1" value="" step="1" >
-</div>
-<div class="inputkurz">
-  <label for="sazka2">Sázka 2(Kč):</label>
-  <input type="number" id="sazka2" step="1">
-</div>
-</div>
+    <div class="container">
 
-<div class="container">
-<div class="inputkurz">
-  <label for="1">Peněz ze sázky 1:</label>
-  <input type="number" id="penez1" value="" step="0.01" disabled class="uneditable">
-</div>
-<div class="inputkurz">
-  <label for="2">Peněz ze sázky 2:</label>
-  <input type="number" id="penez2" value="" step="0.01" disabled class="uneditable">
-</div>
-</div>
+      <label for="kurz1">Kurz 1:</label>
+      <input type="number" id="kurz1" step="0.01" autofocus>
+      <label for="kurz2">Kurz 2:</label>
+      <input type="number" id="kurz2" step="0.01" required>
 
-<div class="container">
-<div class="inputkurz">
-  <label for="1">Investice:</label>
-  <input type="number" id="investice" value="" step="0.01" disabled class="uneditable">
-</div>
-<div class="inputkurz">
-  <label for="2">Zisk:</label>
-  <input type="number" id="zisk" value="" step="0.01" disabled class="uneditable">
-</div>
-</div>
+    </div>
 
-<div class="container">
-<div class="inputkurz">
-  <label for="1">Návratnost:</label>
-  <input type="number" id="navratnost1" value="" disabled step="0.01" class="uneditable">
-</div>
-<div class="inputkurz">
-  <label for="2">Návratnost(%):</label>
-  <input type="number" id="navratnost2" value="" disabled step="0.01" class="uneditable">
+    <div class="container">
 
-</div>
-</div>
+      <label for="sazka1">Sázka 1(Kč):</label>
+      <input type="number" id="sazka1" value="" step="1">
+      <label for="sazka2">Sázka 2(Kč):</label>
+      <input type="number" id="sazka2" step="1">
 
-</form>
-<div id="buttons"><div id="submit"><input type="button" id="submitbutton" value="Vypočítej"></div>
-<div id="reset"><input type="button" id="resetbutton" value="Reset"></div></div>
+    </div>
+
+    <div class="container">
+
+      <label for="1">Peněz ze sázky 1:</label>
+      <input type="number" id="penez1" value="" step="0.01" disabled class="uneditable">
+      <label for="2">Peněz ze sázky 2:</label>
+      <input type="number" id="penez2" value="" step="0.01" disabled class="uneditable">
+
+    </div>
+
+    <div class="container">
+
+      <label for="1">Investice:</label>
+      <input type="number" id="investice" value="" step="0.01" disabled class="uneditable">
+      <label for="2">Zisk:</label>
+      <input type="number" id="zisk" value="" step="0.01" disabled class="uneditable">
+
+    </div>
+
+    <div class="container">
+
+      <label for="1">Návratnost:</label>
+      <input type="number" id="navratnost1" value="" disabled step="0.01" class="uneditable">
+      <label for="2">Návratnost(%):</label>
+      <input type="number" id="navratnost2" value="" disabled step="0.01" class="uneditable">
+
+    </div>
+
+  </form>
+  <div id="buttons">
+    <input type="button" id="submitbutton" value="Vypočítej">
+    <input type="button" id="resetbutton" value="Reset">
+  </div>
 
   <script src="main.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>
