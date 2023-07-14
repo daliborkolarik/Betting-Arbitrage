@@ -4,21 +4,27 @@ body {
   padding: 20px;
   display: flex;
   font-size: 20px;
-  background-color: rgb(255, 243, 225);
+  background-color: rgb(251, 243, 232);
 }
 
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 20px;
   max-width: 400px;
   margin-bottom: 20px;
   margin: 0 auto;
   margin-top: 100px;
-  border: 5px solid #4CAF50;
+  border: 8px solid #000000;
   border-radius: 4%;
   padding: 50px;
   background-color: rgb(254, 238, 216);
+  box-shadow: rgba(76, 175, 80, 0.4) 5px 5px,
+    rgba(76, 175, 80, 0.3) 10px 10px,
+    rgba(76, 175, 80, 0.2) 15px 15px,
+    rgba(76, 175, 80, 0.1) 20px 20px,
+    rgba(76, 175, 80, 0.05) 25px 25px;
+
 }
 
 label {
