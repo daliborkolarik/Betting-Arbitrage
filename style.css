@@ -2,6 +2,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
+  display: flex;
+  font-size: 20px;
+  background-color: rgb(255, 243, 225);
 }
 
 form {
@@ -10,6 +13,12 @@ form {
   grid-gap: 10px;
   max-width: 400px;
   margin-bottom: 20px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 5px solid #4CAF50;
+  border-radius: 4%;
+  padding: 50px;
+  background-color: rgb(254, 238, 216);
 }
 
 label {
@@ -17,8 +26,12 @@ label {
 }
 
 input[type="number"] {
-  width: 100%;
+  width: 95%;
   padding: 5px;
+  padding-right: 0px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5%;
 }
 
 button {
@@ -27,6 +40,8 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  font-size: 20px;
+
 }
 
 button:hover {
